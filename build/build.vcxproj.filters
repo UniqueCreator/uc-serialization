@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src" />
+    <Filter Include="src\pch" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\pch\pch.h">
+      <Filter>src\pch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src" />
+    <Filter Include="src\pch" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\pch\pch.cpp">
+      <Filter>src\pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
