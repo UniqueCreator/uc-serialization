@@ -4,7 +4,9 @@ clone_folder: c:\projects
 build_script:
 - cmd: >-
     nuget restore c:\projects\build\build.sln
+
     msbuild c:\projects\build\build.sln /p:Configuration="Release" /verbosity:quiet
+
 before_deploy:
 - ps: >-
     $autopkgFile = "package.nuspec"
