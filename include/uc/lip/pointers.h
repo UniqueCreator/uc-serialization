@@ -138,9 +138,9 @@ namespace uc
 
             }
 
-            reloc_pointer( const load_context& c ) : reloc_pointer( placement_new<t>( make_pointer_load_context( c, get() )))
+            reloc_pointer( const load_context& c ) : reloc_pointer( placement_new<t>( make_pointer_load_context( c, base::get() )))
             {
-                get_deleter().m_policy = deleter<t>::free_policy::in_place;
+                base::get_deleter().m_policy = deleter<t>::free_policy::in_place;
             }
         };
 

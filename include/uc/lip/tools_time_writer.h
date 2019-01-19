@@ -41,7 +41,6 @@ namespace uc
 
         namespace details
         {
-			#if defined(_X64)
             static void patch_pointer(std::vector<uint8_t> &stream, uint64_t d, uint64_t index)
             {
                 //todo: push_back is very expensive for a byte
@@ -54,25 +53,6 @@ namespace uc
                 stream[index + 6] = ((uint8_t)((d & 0xff000000000000) >> 48));
                 stream[index + 7] = ((uint8_t)((d & 0xff00000000000000) >> 56));
             }
-			#else
-			static void patch_pointer(std::vector<uint8_t> &stream, uint32_t d, uint32_t index)
-			{
-				//todo: push_back is very expensive for a byte
-				stream[index + 0] = ((uint8_t)((d & 0xff)));
-				stream[index + 1] = ((uint8_t)((d & 0xff00) >> 8));
-				stream[index + 2] = ((uint8_t)((d & 0xff0000) >> 16));
-				stream[index + 3] = ((uint8_t)((d & 0xff000000) >> 24));
-
-				/*
-				stream[index + 4] = ((uint8_t)((d & 0xff00000000) >> 32));
-				stream[index + 5] = ((uint8_t)((d & 0xff0000000000) >> 40));
-				stream[index + 6] = ((uint8_t)((d & 0xff000000000000) >> 48));
-				stream[index + 7] = ((uint8_t)((d & 0xff00000000000000) >> 56));
-				*/
-			}
-			#endif
-
-
         }
 
         //state machine which records pointers and writes structs into an array

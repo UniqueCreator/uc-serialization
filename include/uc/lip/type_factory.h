@@ -94,7 +94,8 @@ namespace uc
             type_factory_registrar()
             {
                 static typed_type_factory<t> s_factory;
-                type_factories()->register_factory( typename type_id<t>::value, &s_factory );
+                using type_id    = type_id<t>;
+                type_factories()->register_factory( type_id::value, &s_factory );
             }
         };
     }
