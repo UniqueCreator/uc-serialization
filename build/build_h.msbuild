@@ -4,4 +4,30 @@
 <ItemGroup>	
 <ClInclude Include = "..\src\pch\pch.h"/>	
 <ClInclude Include = "..\src\pch\targetver.h"/>
+</ItemGroup>
+<ItemGroup>	
+<ClInclude Include = "..\include\uc\lip\base_class_info.h"/>	
+<ClInclude Include = "..\include\uc\lip\base_class_info_base.h"/>	
+<ClInclude Include = "..\include\uc\lip\context.h"/>	
+<ClInclude Include = "..\include\uc\lip\introspector.h"/>	
+<ClInclude Include = "..\include\uc\lip\introspector_manager.h"/>	
+<ClInclude Include = "..\include\uc\lip\introspector_version.h"/>	
+<ClInclude Include = "..\include\uc\lip\item_pointers.h"/>	
+<ClInclude Include = "..\include\uc\lip\lip.h"/>	
+<ClInclude Include = "..\include\uc\lip\member_info.h"/>	
+<ClInclude Include = "..\include\uc\lip\member_info_base.h"/>	
+<ClInclude Include = "..\include\uc\lip\pointers.h"/>	
+<ClInclude Include = "..\include\uc\lip\pointers_reloc_array.h"/>	
+<ClInclude Include = "..\include\uc\lip\rtti_macros.h"/>	
+<ClInclude Include = "..\include\uc\lip\string_hash.h"/>	
+<ClInclude Include = "..\include\uc\lip\tools_time_utils.h"/>	
+<ClInclude Include = "..\include\uc\lip\tools_time_writer.h"/>	
+<ClInclude Include = "..\include\uc\lip\type_factory.h"/>	
+<ClInclude Include = "..\include\uc\lip\type_id.h"/>	
+<ClInclude Include = "..\include\uc\lip\type_info.h"/>	
+<ClInclude Include = "..\include\uc\lip\type_traits.h"/>	
+<ClInclude Include = "..\include\uc\lip\writer.h"/>	
+<ClInclude Include = "..\include\uc\lip\writer_memory.h"/>	
+<ClInclude Include = "..\include\uc\lip\writers.h"/>	
+<ClInclude Include = "..\include\uc\lip\writers_pointers.h"/>
 </ItemGroup></Project> 

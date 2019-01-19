@@ -4,6 +4,7 @@ echo ^<?xml version="1.0" encoding="utf-8"?^> > build_h.msbuild
 echo ^<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"^> >> build_h.msbuild
 
 msbuild_generator.exe --input ..\src\ --mode h >> build_h.msbuild
+msbuild_generator.exe --input ..\include\ --mode h >> build_h.msbuild
 
 echo ^</Project^> >> build_h.msbuild
 
@@ -20,6 +21,7 @@ echo ^<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.
 
 msbuild_generator.exe --type filters --input ..\src\ --mode h >> build.vcxproj.filters
 msbuild_generator.exe --type filters --input ..\src\ --mode cpp >> build.vcxproj.filters
+msbuild_generator.exe --type filters --input ..\include\ --mode h >> build.vcxproj.filters
 
 echo ^</Project^> >> build.vcxproj.filters
 
