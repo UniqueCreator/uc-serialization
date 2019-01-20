@@ -6,6 +6,13 @@
 <ClInclude Include = "..\src\pch\targetver.h"/>
 </ItemGroup>
 <ItemGroup>	
+<ClInclude Include = "..\include\uc\gx\animation.h"/>	
+<ClInclude Include = "..\include\uc\gx\base.h"/>	
+<ClInclude Include = "..\include\uc\gx\geo.h"/>	
+<ClInclude Include = "..\include\uc\gx\lip.h"/>	
+<ClInclude Include = "..\include\uc\gx\math.h"/>	
+<ClInclude Include = "..\include\uc\gx\model.h"/>	
+<ClInclude Include = "..\include\uc\gx\structs.h"/>	
 <ClInclude Include = "..\include\uc\lip\base_class_info.h"/>	
 <ClInclude Include = "..\include\uc\lip\base_class_info_base.h"/>	
 <ClInclude Include = "..\include\uc\lip\context.h"/>	

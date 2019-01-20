@@ -19,9 +19,17 @@
 <ItemGroup>
 <Filter Include = "include"/>
 <Filter Include = "include\uc"/>
+<Filter Include = "include\uc\gx"/>
 <Filter Include = "include\uc\lip"/>
 </ItemGroup>
 <ItemGroup>	
+<ClInclude Include = "..\include\uc\gx\animation.h"><Filter>include\uc\gx</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\base.h"><Filter>include\uc\gx</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\geo.h"><Filter>include\uc\gx</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip.h"><Filter>include\uc\gx</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\math.h"><Filter>include\uc\gx</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\model.h"><Filter>include\uc\gx</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\structs.h"><Filter>include\uc\gx</Filter></ClInclude>	
 <ClInclude Include = "..\include\uc\lip\base_class_info.h"><Filter>include\uc\lip</Filter></ClInclude>	
 <ClInclude Include = "..\include\uc\lip\base_class_info_base.h"><Filter>include\uc\lip</Filter></ClInclude>	
 <ClInclude Include = "..\include\uc\lip\context.h"><Filter>include\uc\lip</Filter></ClInclude>	
