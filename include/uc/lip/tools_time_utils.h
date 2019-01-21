@@ -6,15 +6,15 @@
 
 #include "tools_time_writer.h"
 
-#include <uc_dev/lzham/lzham.h>
 
 namespace uc
 {
     namespace lip
     {
-        inline void write_compressed_data(const std::vector<uint8_t>& buffer, const std::string& file_name)
+        template <typename compressor>
+        inline void write_compressed_data(const std::vector<uint8_t>& buffer, const std::string& file_name, const compressor& c)
         {
-            auto compressed_data = lzham::compress_buffer(buffer);
+            auto compressed_data = c(buffer);
             std::fstream f(file_name, std::ios_base::out | std::ios_base::binary); //todo: disable file caching
                                                                                    //write header 8 bytes
             f << "LZHAM   ";
@@ -24,9 +24,10 @@ namespace uc
             f.write((const char*)&compressed_data[0], compressed_data.size());
         }
 
-        inline void write_compressed_data(const std::vector<uint8_t>& buffer, const std::wstring& file_name)
+        template <typename compressor>
+        inline void write_compressed_data(const std::vector<uint8_t>& buffer, const std::wstring& file_name, const compressor& c)
         {
-            auto compressed_data = lzham::compress_buffer(buffer);
+            auto compressed_data = c(buffer);
             std::fstream f(file_name, std::ios_base::out | std::ios_base::binary); //todo: disable file caching
                                                                                    //write header 8 bytes
             f << "LZHAM   ";
@@ -70,24 +71,24 @@ namespace uc
             return r;
         }
 
-        template <typename lip_type > inline void serialize_object( const lip_type* o, const std::string& file_name )
+        template <typename lip_type, typename compressor > inline void serialize_object( const lip_type* o, const std::string& file_name, const compressor& c )
         {
-            write_compressed_data( binarize_object( o ), file_name);
+            write_compressed_data( binarize_object( o ), file_name, c);
         }
 
-        template <typename lip_type > inline void serialize_object(const lip_type* o, const std::wstring& file_name)
+        template <typename lip_type, typename compressor > inline void serialize_object(const lip_type* o, const std::wstring& file_name, const compressor& c)
         {
-            write_compressed_data(binarize_object(o), file_name);
+            write_compressed_data(binarize_object(o), file_name, c);
         }
 
-        template <typename lip_type > inline void serialize_object( std::unique_ptr<lip_type>&& o, const std::string& file_name)
+        template <typename lip_type, typename compressor > inline void serialize_object( std::unique_ptr<lip_type>&& o, const std::string& file_name, const compressor& c)
         {
-            write_compressed_data( binarize_object(std::move(o) ) , file_name);
+            write_compressed_data( binarize_object(std::move(o) ), file_name, c);
         }
 
-        template <typename lip_type > inline void serialize_object(std::unique_ptr<lip_type>&& o, const std::wstring& file_name)
+        template <typename lip_type, typename compressor> inline void serialize_object(std::unique_ptr<lip_type>&& o, const std::wstring& file_name, const compressor& c)
         {
-            write_compressed_data(binarize_object(std::move(o)), file_name);
+            write_compressed_data(binarize_object(std::move(o)), file_name, c);
         }
     }
 }
