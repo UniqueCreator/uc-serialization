@@ -15,7 +15,6 @@
   </metadata>
   <files>
     <file src = "include\**" target = "build/native/include" />
-    <file src = "lib\**"     target = "build/natibe/lib" />
     <file src = "build\uc-serialization.props"   target = "build/native" />
     <file src = "build\uc-serialization.targets" target = "build/native" />
   </files>
