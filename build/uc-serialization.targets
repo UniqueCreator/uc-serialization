@@ -3,14 +3,16 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UC_TOOLS;_X64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
 
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>uc-serialization.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      AdditionalOptions
+      <AdditionalOptions>/WHOLEARCHIVE:uc-serialization.lib %(AdditionalOptions)</AdditionalOptions>
+
     </Link>
   </ItemDefinitionGroup>
 
