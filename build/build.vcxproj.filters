@@ -17,19 +17,33 @@
 <ClCompile Include = "..\src\pch\pch.cpp"><Filter>src\pch</Filter></ClCompile>
 </ItemGroup>
 <ItemGroup>
+<Filter Include = "src"/>
+<Filter Include = "src\gx"/>
+<Filter Include = "src\gx\lip"/>
+<Filter Include = "src\lip"/>
+</ItemGroup>
+<ItemGroup>	
+<ClCompile Include = "..\src\gx\lip\animation.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\src\gx\lip\math.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\src\gx\lip\model.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\src\gx\lip\structs.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\src\lip\introspector_intrinsics.cpp"><Filter>src\lip</Filter></ClCompile>
+</ItemGroup>
+<ItemGroup>
 <Filter Include = "include"/>
 <Filter Include = "include\uc"/>
 <Filter Include = "include\uc\gx"/>
+<Filter Include = "include\uc\gx\lip"/>
 <Filter Include = "include\uc\lip"/>
 </ItemGroup>
 <ItemGroup>	
-<ClInclude Include = "..\include\uc\gx\animation.h"><Filter>include\uc\gx</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\base.h"><Filter>include\uc\gx</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\geo.h"><Filter>include\uc\gx</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\lip.h"><Filter>include\uc\gx</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\math.h"><Filter>include\uc\gx</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\model.h"><Filter>include\uc\gx</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\structs.h"><Filter>include\uc\gx</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip\animation.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip\base.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip\geo.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip\lip.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip\math.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip\model.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\include\uc\gx\lip\structs.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
 <ClInclude Include = "..\include\uc\lip\base_class_info.h"><Filter>include\uc\lip</Filter></ClInclude>	
 <ClInclude Include = "..\include\uc\lip\base_class_info_base.h"><Filter>include\uc\lip</Filter></ClInclude>	
 <ClInclude Include = "..\include\uc\lip\context.h"><Filter>include\uc\lip</Filter></ClInclude>	

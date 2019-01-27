@@ -3,4 +3,11 @@
 
 <ItemGroup>	
 <ClCompile Include = "..\src\pch\pch.cpp"><PrecompiledHeader>Create</PrecompiledHeader></ClCompile>
+</ItemGroup>
+<ItemGroup>	
+<ClCompile Include = "..\src\gx\lip\animation.cpp" />	
+<ClCompile Include = "..\src\gx\lip\math.cpp" />	
+<ClCompile Include = "..\src\gx\lip\model.cpp" />	
+<ClCompile Include = "..\src\gx\lip\structs.cpp" />	
+<ClCompile Include = "..\src\lip\introspector_intrinsics.cpp" />
 </ItemGroup></Project> 
