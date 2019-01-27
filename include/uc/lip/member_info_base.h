@@ -210,7 +210,7 @@ namespace uc
         
 
         template <typename t>
-        class member_info_typed_base final : public member_info_base
+        class member_info_typed_base : public member_info_base
         {
             using base = member_info_base;
 

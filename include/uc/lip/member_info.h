@@ -9,7 +9,7 @@ namespace uc
     namespace lip
     {
         template<typename t, typename member_type_t >
-        class member_info : public member_info_typed_base<member_type_t>
+        class member_info final : public member_info_typed_base<member_type_t>
         {
             using base = member_info_typed_base<member_type_t>;
 
