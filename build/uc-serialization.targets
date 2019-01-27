@@ -10,6 +10,7 @@
     <Link>
       <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>uc-serialization.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      AdditionalOptions
     </Link>
   </ItemDefinitionGroup>
 
