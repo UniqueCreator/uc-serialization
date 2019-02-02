@@ -14,7 +14,7 @@
     <tags>serialization,unique,uc,creator</tags>
   </metadata>
   <files>
-    <file src = "include\**" target = "build/native/include" />
+    <file src = "dev\include\**" target = "build/native/include" />
     <file src = "lib\win-x64\release\**"     target = "build/native/lib" />
     <file src = "build\uc-serialization.props"   target = "build/native" />
     <file src = "build\uc-serialization.targets" target = "build/native" />
