@@ -2,70 +2,74 @@
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
 
 <ItemGroup>
-<Filter Include = "src"/>
-<Filter Include = "src\pch"/>
+<Filter Include = "dev"/>
+<Filter Include = "dev\src"/>
+<Filter Include = "dev\src\pch"/>
 </ItemGroup>
 <ItemGroup>	
-<ClInclude Include = "..\src\pch\pch.h"><Filter>src\pch</Filter></ClInclude>	
-<ClInclude Include = "..\src\pch\targetver.h"><Filter>src\pch</Filter></ClInclude>
+<ClInclude Include = "..\dev\src\pch\pch.h"><Filter>dev\src\pch</Filter></ClInclude>	
+<ClInclude Include = "..\dev\src\pch\targetver.h"><Filter>dev\src\pch</Filter></ClInclude>
 </ItemGroup>
 <ItemGroup>
-<Filter Include = "src"/>
-<Filter Include = "src\pch"/>
+<Filter Include = "dev"/>
+<Filter Include = "dev\src"/>
+<Filter Include = "dev\src\pch"/>
 </ItemGroup>
 <ItemGroup>	
-<ClCompile Include = "..\src\pch\pch.cpp"><Filter>src\pch</Filter></ClCompile>
+<ClCompile Include = "..\dev\src\pch\pch.cpp"><Filter>dev\src\pch</Filter></ClCompile>
 </ItemGroup>
 <ItemGroup>
-<Filter Include = "src"/>
-<Filter Include = "src\gx"/>
-<Filter Include = "src\gx\lip"/>
-<Filter Include = "src\lip"/>
+<Filter Include = "dev"/>
+<Filter Include = "dev\src"/>
+<Filter Include = "dev\src\gx"/>
+<Filter Include = "dev\src\gx\lip"/>
+<Filter Include = "dev\src\lip"/>
 </ItemGroup>
 <ItemGroup>	
-<ClCompile Include = "..\src\gx\lip\animation.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
-<ClCompile Include = "..\src\gx\lip\math.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
-<ClCompile Include = "..\src\gx\lip\model.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
-<ClCompile Include = "..\src\gx\lip\structs.cpp"><Filter>src\gx\lip</Filter></ClCompile>	
-<ClCompile Include = "..\src\lip\introspector_intrinsics.cpp"><Filter>src\lip</Filter></ClCompile>
+<ClCompile Include = "..\dev\src\gx\lip\animation.cpp"><Filter>dev\src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\dev\src\gx\lip\math.cpp"><Filter>dev\src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\dev\src\gx\lip\model.cpp"><Filter>dev\src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\dev\src\gx\lip\structs.cpp"><Filter>dev\src\gx\lip</Filter></ClCompile>	
+<ClCompile Include = "..\dev\src\lip\introspector_intrinsics.cpp"><Filter>dev\src\lip</Filter></ClCompile>
 </ItemGroup>
 <ItemGroup>
-<Filter Include = "include"/>
-<Filter Include = "include\uc"/>
-<Filter Include = "include\uc\gx"/>
-<Filter Include = "include\uc\gx\lip"/>
-<Filter Include = "include\uc\lip"/>
+<Filter Include = "dev"/>
+<Filter Include = "dev\include"/>
+<Filter Include = "dev\include\uc"/>
+<Filter Include = "dev\include\uc\gx"/>
+<Filter Include = "dev\include\uc\gx\lip"/>
+<Filter Include = "dev\include\uc\lip"/>
 </ItemGroup>
 <ItemGroup>	
-<ClInclude Include = "..\include\uc\gx\lip\animation.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\lip\base.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\lip\geo.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\lip\lip.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\lip\math.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\lip\model.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\gx\lip\structs.h"><Filter>include\uc\gx\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\base_class_info.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\base_class_info_base.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\context.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\introspector.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\introspector_manager.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\introspector_version.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\item_pointers.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\lip.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\member_info.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\member_info_base.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\pointers.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\pointers_reloc_array.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\rtti_macros.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\string_hash.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\tools_time_utils.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\tools_time_writer.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\type_factory.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\type_id.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\type_info.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\type_traits.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\writer.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\writer_memory.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\writers.h"><Filter>include\uc\lip</Filter></ClInclude>	
-<ClInclude Include = "..\include\uc\lip\writers_pointers.h"><Filter>include\uc\lip</Filter></ClInclude>
+<ClInclude Include = "..\dev\include\uc\gx\lip\animation.h"><Filter>dev\include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\gx\lip\base.h"><Filter>dev\include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\gx\lip\geo.h"><Filter>dev\include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\gx\lip\lip.h"><Filter>dev\include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\gx\lip\math.h"><Filter>dev\include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\gx\lip\model.h"><Filter>dev\include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\gx\lip\structs.h"><Filter>dev\include\uc\gx\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\base_class_info.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\base_class_info_base.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\context.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\introspector.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\introspector_manager.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\introspector_version.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\item_pointers.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\lip.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\member_info.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\member_info_base.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\pointers.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\pointers_reloc_array.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\rtti_macros.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\string_hash.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\tools_time_utils.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\tools_time_writer.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\type_factory.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\type_id.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\type_info.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\type_traits.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\writer.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\writer_memory.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\writers.h"><Filter>dev\include\uc\lip</Filter></ClInclude>	
+<ClInclude Include = "..\dev\include\uc\lip\writers_pointers.h"><Filter>dev\include\uc\lip</Filter></ClInclude>
 </ItemGroup></Project> 

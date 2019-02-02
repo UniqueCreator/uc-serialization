@@ -12,7 +12,6 @@
       <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>uc-serialization.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/WHOLEARCHIVE:uc-serialization.lib %(AdditionalOptions)</AdditionalOptions>
-
     </Link>
   </ItemDefinitionGroup>
 
