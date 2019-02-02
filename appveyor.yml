@@ -1,6 +1,9 @@
 version: 1.0.{build}
 image: Visual Studio 2019 Preview
 clone_folder: c:\projects
+install:
+  - cd c:\projects
+  - git submodule update --init --recursive
 build_script:
 - cmd: >-
     nuget restore c:\projects\build\build.sln
