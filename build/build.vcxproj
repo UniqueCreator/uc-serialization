@@ -48,6 +48,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>../dev/src/pch;../dev/include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(SolutionDir)..\lib\win-$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
